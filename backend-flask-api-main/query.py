@@ -11,7 +11,7 @@ os.environ["OPENAI_API_KEY"] = config['api_key']
 index = GPTSimpleVectorIndex.load_from_disk("indices/adgm_index.json")
 
 while True:
-    query = input("Enter your query (type 'exit' to quit): ")
+    query = input("Enter your query here (type 'exit' to quit): ")
     if query == 'exit':
         break
     response = index.query(query)
